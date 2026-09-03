@@ -4,7 +4,12 @@ A weather trends analytics project built on Microsoft Fabric, using a scheduled 
 
 ## Architecture
 
-(diagram + explanation coming soon)
+Data flows: Open-Meteo API → Data Pipeline → Lakehouse (Files, raw JSON)
+→ Spark notebook (parse + flatten + type cast) → Lakehouse (Delta tables)
+→ Direct Lake semantic model → Power BI report.
+
+Full write-up, including a real connector limitation we hit and worked
+around, is in [`docs/architecture.md`](docs/architecture.md).
 
 ## Tech stack
 - Microsoft Fabric (Data Pipeline, Lakehouse, Notebook, Power BI semantic model)
@@ -13,7 +18,8 @@ A weather trends analytics project built on Microsoft Fabric, using a scheduled 
 - DAX
 
 ## Status
-🚧 In progress
+✅ Data pipeline, transformation, and semantic model complete
+🚧 Report pages in progress
 
 ## Contents
 - `notebooks/` — Spark notebook exports for data transformation
