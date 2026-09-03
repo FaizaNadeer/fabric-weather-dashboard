@@ -11,6 +11,14 @@ Data flows: Open-Meteo API → Data Pipeline → Lakehouse (Files, raw JSON)
 Full write-up, including a real connector limitation we hit and worked
 around, is in [`docs/architecture.md`](docs/architecture.md).
 
+## Report
+
+### Temperature Trend & Anomalies
+![Trend page](screenshots/trend.png)
+
+### Seasonal Deviation
+![Seasonal deviation page](screenshots/seasonal-deviation.png)
+
 ## Tech stack
 - Microsoft Fabric (Data Pipeline, Lakehouse, Notebook, Power BI semantic model)
 - Open-Meteo API (no auth required)
@@ -18,8 +26,7 @@ around, is in [`docs/architecture.md`](docs/architecture.md).
 - DAX
 
 ## Status
-✅ Data pipeline, transformation, and semantic model complete
-🚧 Report pages in progress
+✅ Complete — ingestion, transformation, semantic model, and report all built
 
 ## Contents
 - `notebooks/` — Spark notebook exports for data transformation
