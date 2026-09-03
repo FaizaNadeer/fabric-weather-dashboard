@@ -14,10 +14,10 @@ around, is in [`docs/architecture.md`](docs/architecture.md).
 ## Report
 
 ### Temperature Trend & Anomalies
-![Trend page](screenshots/trend.png)
+![Trend page](screenshots/Trend Screenshot.png)
 
 ### Seasonal Deviation
-![Seasonal deviation page](screenshots/seasonal-deviation.png)
+![Seasonal deviation page](screenshots/Seasonal Deviation Screenshot.png)
 
 ## Tech stack
 - Microsoft Fabric (Data Pipeline, Lakehouse, Notebook, Power BI semantic model)
